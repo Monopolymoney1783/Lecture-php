@@ -1,0 +1,5 @@
+version: '3.5'
+
+services:
+  php_fpm:
+    build: ./docker/build/php

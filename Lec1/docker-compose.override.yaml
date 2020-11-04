@@ -1,0 +1,15 @@
+version: '3.5'
+
+services:
+  php_fpm:
+    container_name: lec_php
+    volumes:
+      - .:/var/www
+    environment:
+      - XDEBUG_HOST=192.168.1.68
+      #- XDEBUG_HOST=192.168.1.130
+      #- XDEBUG_HOST=172.20.10.8
+      #- XDEBUG_HOST=192.168.0.107
+      #- XDEBUG_HOST=172.18.0.1
+      - XDEBUG_PORT=9000
+      - PHP_IDE_CONFIG=serverName=lec_php.local
