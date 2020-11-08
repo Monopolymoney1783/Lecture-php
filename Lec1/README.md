@@ -11,3 +11,14 @@ https://www.php.net/manual/ru/control-structures.for.php
 https://www.php.net/manual/ru/function.echo
 
 Видео: https://youtu.be/7HM_itDmoQo
+
+#UPD
+Если есть проблемы с настройкой докера предлагаю со всем этим поиграть
+на внешнем срваке.
+
+Посмотреть видео, оно короткое, можно на скорости: https://youtu.be/qC5lCFrzinY
+
+1) установить докер используя инструкции с 1 по 3 https://vk.cc/aCb3ZO. 
+Так же надо настоить чтобы докер работал без sudo у пользователя eden.
+2) Используя первый пункт установить docker-compose инструкция: 
+https://vk.cc/aCb4EF
