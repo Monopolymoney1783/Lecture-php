@@ -8,4 +8,7 @@ php -r %команда% - исполнение команды php %имя_фай
 3) php-xdebug
 4) composer
 
+#Полезный гайд по ssh тунелям
+https://codex.so/ssh-tunnel
+
 #Домой
