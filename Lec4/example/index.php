@@ -1,4 +1,5 @@
 <?php
+// подключаем самый главный и основоной файл логики
 require_once './ext/ext.php';
 ?>
 <!DOCTYPE html>
