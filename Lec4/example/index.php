@@ -1,7 +1,5 @@
 <?php
-session_start();
 require_once './ext/ext.php';
-redirectOnDel();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +27,11 @@ redirectOnDel();
 </head>
 <body>
 <?php
-requireRoute();
+// здесь рендерим html шаблон, который находится в папке layouts
+// прикол в том, что в папке layouts лежат файлы, которые отвечают за вывод
+// 
+// в ext/layout.php описан текущий вызываемый метод
+renderLayout();
 ?>
 </body>
 </html>
