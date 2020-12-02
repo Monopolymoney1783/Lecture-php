@@ -33,3 +33,20 @@ function readFromData(): array
 
   return unserialize($fileData) ?? [];
 }
+
+function filteredData(array $data): array
+{
+  $age = $_GET['age'] ?? null;
+  if (empty($age)) {
+    return $data;
+  }
+
+  $filtered = [];
+	foreach ($data as $key => $user) {
+		if ($user['age'] == $age) {
+			$filtered[$key] = $user;
+		}
+  }
+  
+	return $filtered;
+}

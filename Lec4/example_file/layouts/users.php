@@ -3,6 +3,10 @@
         <a class="nav-link active"" href="/add"> Add </a>
     </li>
 </ul>
+<form class="form-group" action="users" method="GET">
+    <input name="age" class="form-control"  placeholder="Возраст" type="text"> <br>
+    <button type="submit" class="btn btn-primary" name="submit"> Фильтровать </button>
+</form>
 <table class="table table-sm table-hover">
     <thead class="table-color">
     <tr>
@@ -16,7 +20,8 @@
     </thead>
 <?php
 $loadedData = readFromData();
-foreach($loadedData as $key => $user) {
+$filteredData = filteredData($loadedData);
+foreach($filteredData as $key => $user) {
     echo "<tr><td class='table-color width text-center'>$key</td>";
     foreach($user as $value) {
         echo "<td class='text-center'>$value</td>";
