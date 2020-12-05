@@ -38,6 +38,7 @@ setcookie(md5('clicks'), $ciphertext);
 <body>
   <a href="signup.php">Авторизация</a>
   <a href="profile.php">Профиль</a>
+  <a href=""
   <a href="exit.php">Выйти</a>
   <h1>Кликов: <?= $currentClicks ?></h1>
 </body>
